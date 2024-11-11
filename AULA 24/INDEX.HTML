@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <LABEl>NOME</LABEl>
+    <input id="inputUsuario" size="60"> <button onclick="enviaResposta()" onmouseover="resposta()">Enviar</button>
+    <br> <br>
+    <LABEl>SOBRENOME</LABEl>
+    <input id="SOBRENOME" size="60">
+    <br>
+    <div id="resposta"> </div>
+    <br><br>
+    <input id="quadrado" size="60">
+
+    <script type="text/JavaScript">
+        function enviaResposta() {
+            var IU = document.getElementById('inputUsuario').value;
+            var UI = document.getElementById('SOBRENOME').value;
+            window.alert('O NOME É : ' + UI + ',' +IU );
+        }
+        function resposta() {
+            var IU = document.getElementById('inputUsuario').value;
+            var UI = document.getElementById('SOBRENOME').value;
+            document.getElementById('resposta').innerHTML= (IU + UI)
+        }
+
+    </script>
+
+    </script>
+</body>
+
+</html>
